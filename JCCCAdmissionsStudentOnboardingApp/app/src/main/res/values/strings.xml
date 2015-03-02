@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">JCCC Onboarding</string>
+    <string name="title_section1">Search</string>
+    <string name="title_section2">About JCCC</string>
+    <string name="title_section3">Programs and Degrees</string>
+    <string name="title_section4">Schedule a Campus Visit</string>
+    <string name="title_section5">Find a Counselor</string>
+    <string name="title_section6">Application</string>
+    <string name="title_section7">Enrollment</string>
+    <string name="title_section8">Financial Aid</string>
+    <string name="title_section9">Tuition and Payments</string>
+    <string name="title_section10">Testing</string>
+    <string name="title_section11">Emergency</string>
+    <string name="title_section12">Social Media</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="action_settings">Settings</string>
+
+</resources>
