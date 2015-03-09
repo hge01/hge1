@@ -179,6 +179,26 @@ public class MainActivity extends ActionBarActivity
                 case 3:
                     webUrl= "http://www.jccc.edu/admissions/apply/selective-admissions/";
                     break;
+                case 4:
+                    webUrl= "http://www.jccc.edu/admissions/visit/schedule.html#.VPz_l_nF_VI";
+                    break;
+                case 5:
+                    webUrl="http://www.jccc.edu/student-resources/counseling/academic/appointments.html#.VP0CBPnF_VI";
+                    break;
+                case 6:
+                    break;
+                case 7:
+                    break;
+                case 8:
+                    break;
+                case 9:
+                    break;
+                case 10:
+                    break;
+                case 11:
+                    break;
+                case 12:
+                    break;
             }
 
             if(myWebView != null){
