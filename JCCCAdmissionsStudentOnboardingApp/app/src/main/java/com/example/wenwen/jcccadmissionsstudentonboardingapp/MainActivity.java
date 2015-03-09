@@ -17,6 +17,7 @@ import android.view.ViewGroup;
 import android.support.v4.widget.DrawerLayout;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
+import android.webkit.WebView;
 //Created by Hongjun
 
 public class MainActivity extends ActionBarActivity
@@ -165,20 +166,23 @@ public class MainActivity extends ActionBarActivity
                                  Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_main, container, false);
 
-            TextView t = (TextView)rootView.findViewById(R.id.section_label);
-            int i = getArguments().getInt(ARG_SECTION_NUMBER);
-            if(t!=null){
-                switch(i){
-                    case 1:
-                        t.setText("I'm at section Search");
-                        break;
-                    case 2:
-                        t.setText("I'm at section About JCCC");
-                        break;
-                    default:
-                        t.setText("I'm at section " + i);
-                }
+            WebView myWebView = (WebView)rootView.findViewById(R.id.webview);
 
+            int i = getArguments().getInt(ARG_SECTION_NUMBER);
+            String webUrl = "http://www.jccc.edu/";
+            switch(i){
+                case 1:
+                    break;
+                case 2:
+                    webUrl= "http://www.jccc.edu/about/index.html";
+                    break;
+                case 3:
+                    webUrl= "http://www.jccc.edu/admissions/apply/selective-admissions/";
+                    break;
+            }
+
+            if(myWebView != null){
+                myWebView.loadUrl(webUrl);
             }
             return rootView;
         }
