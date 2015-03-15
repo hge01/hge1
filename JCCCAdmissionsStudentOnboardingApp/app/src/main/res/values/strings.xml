@@ -13,7 +13,8 @@
     <string name="title_section9">Tuition and Payments</string>
     <string name="title_section10">Testing</string>
     <string name="title_section11">Emergency</string>
-    <string name="title_section12">Social Media</string>
+    <string name="title_section12">Facebook</string>
+    <string name="title_section13">Twitter</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="action_example">Example action</string>

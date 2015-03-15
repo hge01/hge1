@@ -95,7 +95,10 @@ public class MainActivity extends ActionBarActivity
                 mTitle = getString(R.string.title_section11);
                 break;
             case 12:
-                mTitle = getString(R.string.title_section12);
+                mTitle = "Facebook";
+                break;
+            case 13:
+                mTitle = "Twitter";
                 break;
         }
     }
@@ -198,6 +201,10 @@ public class MainActivity extends ActionBarActivity
                 case 11:
                     break;
                 case 12:
+                    webUrl="https://www.facebook.com/JCCC411";
+                    break;
+                case 13:
+                    webUrl="https://twitter.com/jccctweet";
                     break;
             }
 
