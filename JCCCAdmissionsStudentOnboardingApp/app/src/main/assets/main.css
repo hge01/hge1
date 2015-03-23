@@ -1,0 +1,40 @@
+/*Clear up margins and paddings. */
+{
+    margin:0;
+    padding:0;
+}
+
+
+
+#hero-imagery.jumbotron {
+    padding: 220px 0 0 0;
+}
+
+#hero-imagery {
+    position: relative;
+    border: 0;
+    background-color: rgb(26, 26, 26);
+    background-repeat: no-repeat;
+    background-position: 80% 50%;
+    border-bottom: 1px solid silver;
+
+}
+
+.container{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+div{
+    display: block;
+}
+
+body{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+
+    line-height: 1.42857143;
+    color:#333;
+    background-color:#CCCCCC;
+}

@@ -250,7 +250,16 @@ public class NavigationDrawerFragment extends Fragment {
             showGlobalContextActionBar();
         }
         super.onCreateOptionsMenu(menu, inflater);
+
+        /*
+        //add submenu
+        //super.onCreateOptionsMenu(menu, inflater);
+        inflater.inflate(R.menu.main, menu);
+        MenuItem menuItem1 = menu.findItem(R.id.action_application).getSubMenu().findItem(R.id.action_application).getSubMenu().add(Menu.NONE, 1, Menu.NONE, "Apply for Admission");
+        MenuItem menuItem2 = menu.findItem(R.id.action_application).getSubMenu().findItem(R.id.action_application).getSubMenu().add(Menu.NONE, 2, Menu.NONE, "Selective Programs");
+        */
     }
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -258,7 +267,7 @@ public class NavigationDrawerFragment extends Fragment {
             return true;
         }
 
-        if (item.getItemId() == R.id.action_example) {
+        if (item.getItemId() == R.id.action_applyForAdmission) {
             Toast.makeText(getActivity(), "Example action.", Toast.LENGTH_SHORT).show();
             return true;
         }

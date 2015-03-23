@@ -5,19 +5,17 @@ import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.content.Context;
-import android.os.Build;
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.SubMenu;
 import android.view.View;
 import android.view.ViewGroup;
 import android.support.v4.widget.DrawerLayout;
-import android.widget.ArrayAdapter;
-import android.widget.TextView;
 import android.webkit.WebView;
+
 //Created by Hongjun
 
 public class MainActivity extends ActionBarActivity
@@ -60,6 +58,7 @@ public class MainActivity extends ActionBarActivity
     }
 
     public void onSectionAttached(int number) {
+
         switch (number) {
             case 1:
                 mTitle = getString(R.string.title_section1);
@@ -95,10 +94,10 @@ public class MainActivity extends ActionBarActivity
                 mTitle = getString(R.string.title_section11);
                 break;
             case 12:
-                mTitle = "Facebook";
+                mTitle = getString(R.string.title_section12);
                 break;
             case 13:
-                mTitle = "Twitter";
+                mTitle = getString(R.string.title_section13);
                 break;
         }
     }
@@ -120,9 +119,20 @@ public class MainActivity extends ActionBarActivity
             getMenuInflater().inflate(R.menu.main, menu);
             restoreActionBar();
             return true;
+/*
+            //add submenu
+            super.onCreateOptionsMenu(menu, inflater);
+            inflater.inflate(R.menu.main, menu);
+            MenuItem menuItem1 = menu.findItem(R.id.action_application).getSubMenu().findItem(R.id.action_application).getSubMenu().add(Menu.NONE, 1, Menu.NONE, "Apply for Admission");
+            MenuItem menuItem2 = menu.findItem(R.id.action_application).getSubMenu().findItem(R.id.action_application).getSubMenu().add(Menu.NONE, 2, Menu.NONE, "Selective Programs");
+            */
         }
         return super.onCreateOptionsMenu(menu);
+
+
     }
+
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -177,7 +187,7 @@ public class MainActivity extends ActionBarActivity
                 case 1:
                     break;
                 case 2:
-                    webUrl= "http://www.jccc.edu/about/index.html";
+                    webUrl= "file:///android_asset/about.html";
                     break;
                 case 3:
                     webUrl= "http://www.jccc.edu/admissions/apply/selective-admissions/";
