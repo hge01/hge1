@@ -7,7 +7,7 @@
 
 
 #hero-imagery.jumbotron {
-    padding: 220px 0 0 0;
+    padding: 150px 0 0 0;
 }
 
 #hero-imagery {
@@ -36,5 +36,15 @@ body{
 
     line-height: 1.42857143;
     color:#333;
-    background-color:#CCCCCC;
+    background-color:#ececed;
+}
+
+.table{
+    width: 100%;
+    margin-bottom: 20px;
+    vertical-align:center;
+}
+
+.table-striped{
+    background-color: #f9f9f9;
 }

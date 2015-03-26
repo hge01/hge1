@@ -14,6 +14,7 @@ import android.view.SubMenu;
 import android.view.View;
 import android.view.ViewGroup;
 import android.support.v4.widget.DrawerLayout;
+import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 
 //Created by Hongjun
@@ -89,15 +90,6 @@ public class MainActivity extends ActionBarActivity
                 break;
             case 10:
                 mTitle = getString(R.string.title_section10);
-                break;
-            case 11:
-                mTitle = getString(R.string.title_section11);
-                break;
-            case 12:
-                mTitle = getString(R.string.title_section12);
-                break;
-            case 13:
-                mTitle = getString(R.string.title_section13);
                 break;
         }
     }
@@ -180,41 +172,52 @@ public class MainActivity extends ActionBarActivity
             View rootView = inflater.inflate(R.layout.fragment_main, container, false);
 
             WebView myWebView = (WebView)rootView.findViewById(R.id.webview);
+            myWebView.setWebChromeClient(new WebChromeClient());
+            myWebView.getSettings().setJavaScriptEnabled(true);
 
             int i = getArguments().getInt(ARG_SECTION_NUMBER);
             String webUrl = "http://www.jccc.edu/";
             switch(i){
                 case 1:
-                    break;
-                case 2:
+                    //About JCCC
                     webUrl= "file:///android_asset/about.html";
                     break;
+                case 2:
+                    //Campus Visit
+                    webUrl= "file:///android_asset/campusVisit.html";
+
+                    break;
                 case 3:
-                    webUrl= "http://www.jccc.edu/admissions/apply/selective-admissions/";
+                    //Campus Map
+                    webUrl= "file:///android_asset/campusMap.html";
                     break;
                 case 4:
-                    webUrl= "http://www.jccc.edu/admissions/visit/schedule.html#.VPz_l_nF_VI";
+                    //Areas of Study and Degrees
+                    webUrl= "file:///android_asset/programs_and_degrees.html";
                     break;
                 case 5:
-                    webUrl="http://www.jccc.edu/student-resources/counseling/academic/appointments.html#.VP0CBPnF_VI";
+                    //Meet a Counselor
+                    webUrl= "file:///android_asset/counseling.html";
                     break;
                 case 6:
+                    //Admission
+                    webUrl= "file:///android_asset/admission.html";
                     break;
                 case 7:
+                    //Login
+                    webUrl= "file:///android_asset/login.html";
                     break;
                 case 8:
+                    //Twitter
+                    webUrl="https://twitter.com/jccctweet";
                     break;
                 case 9:
-                    break;
-                case 10:
-                    break;
-                case 11:
-                    break;
-                case 12:
+                    //Facebook
                     webUrl="https://www.facebook.com/JCCC411";
                     break;
-                case 13:
-                    webUrl="https://twitter.com/jccctweet";
+                case 10:
+                    //Emergency
+                    webUrl= "file:///android_asset/emergency.html";
                     break;
             }
 
