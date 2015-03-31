@@ -17,7 +17,7 @@ import android.support.v4.widget.DrawerLayout;
 import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 
-//Created by Hongjun
+
 
 public class MainActivity extends ActionBarActivity
         implements NavDrawer.NavigationDrawerCallbacks {
