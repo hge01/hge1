@@ -8,9 +8,7 @@ import android.support.v4.app.FragmentManager;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.SubMenu;
 import android.view.View;
 import android.view.ViewGroup;
 import android.support.v4.widget.DrawerLayout;
@@ -59,7 +57,7 @@ public class MainActivity extends ActionBarActivity
     }
 
     public void onSectionAttached(int number) {
-
+        //When click each menu, it will show the related title.
         switch (number) {
             case 1:
                 mTitle = getString(R.string.title_section1);
@@ -173,10 +171,13 @@ public class MainActivity extends ActionBarActivity
 
             WebView myWebView = (WebView)rootView.findViewById(R.id.webview);
             myWebView.setWebChromeClient(new WebChromeClient());
+
+            //Enable JavaScript so that the video in the html files will work.
             myWebView.getSettings().setJavaScriptEnabled(true);
 
             int i = getArguments().getInt(ARG_SECTION_NUMBER);
-            String webUrl = "http://www.jccc.edu/";
+            String webUrl = "http://www.jccc.edu/";          //define default WebView
+            //Enable WebView when click each menu.
             switch(i){
                 case 1:
                     //About JCCC
@@ -185,7 +186,6 @@ public class MainActivity extends ActionBarActivity
                 case 2:
                     //Campus Visit
                     webUrl= "file:///android_asset/campusVisit.html";
-
                     break;
                 case 3:
                     //Campus Map

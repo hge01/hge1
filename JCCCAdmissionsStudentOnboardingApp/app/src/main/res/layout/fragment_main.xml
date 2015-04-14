@@ -7,7 +7,7 @@
     tools:context=".MainActivity$PlaceholderFragment">
 
     <WebView  xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/webview"
+        android:id="@+id/WebView"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         />

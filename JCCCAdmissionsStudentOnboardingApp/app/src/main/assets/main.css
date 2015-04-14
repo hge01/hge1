@@ -50,3 +50,9 @@ body{
 .table-striped{
     background-color: #f9f9f9;
 }
+
+.col-md-8{
+    width: 100%;
+    margin-left: 20px;
+    vertical-align:center;
+}

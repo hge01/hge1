@@ -102,7 +102,7 @@ public class NavDrawer extends Fragment {
                 android.R.layout.simple_list_item_activated_2,
                 android.R.id.text1,
                 new String[]{
-                        //"hello, here's testing something",
+                        //Create navigation drawer menus
                         getString(R.string.title_section1),
                         getString(R.string.title_section2),
                         getString(R.string.title_section3),

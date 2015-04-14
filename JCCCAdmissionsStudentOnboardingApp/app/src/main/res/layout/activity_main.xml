@@ -4,7 +4,7 @@
     android:layout_width="match_parent" android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <!--
+
     <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/image"
         android:layout_width="match_parent"
@@ -13,7 +13,7 @@
         android:gravity="center"
         android:padding="32dp"
         android:src="@drawable/jccclogo" />
-    -->
+
 
 
     <!-- As the main content view, the view below consumes the entire
