@@ -7,12 +7,12 @@
 
 
 #hero-imagery.jumbotron {
-    padding: 150px 0 0 0;
+    padding: 140px 0 0 0;
 }
 
 #hero-imagery {
     position: relative;
-    border: 0;
+    border: 10px;
     background-color: rgb(26, 26, 26);
     background-repeat: no-repeat;
     background-position: 80% 50%;
@@ -31,28 +31,41 @@ div{
     display: block;
     margin: 0;
     padding: 0;
+    margin-left: 20px;
 }
 
 body{
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
     line-height: 1.42857143;
     color:#333;
     background-color:#ececed;
 }
 
 .table{
-    width: 100%;
+    width: 80%;
     margin-bottom: 20px;
     vertical-align:center;
 }
 
-.table-striped{
-    background-color: #f9f9f9;
+.table.table-condensed.table-striped {
+    background-color: #f7f7f3;
 }
 
 .col-md-8{
-    width: 100%;
+    width: 90%;
     margin-left: 20px;
     vertical-align:center;
+}
+
+
+
+#content{
+    width: 70%;
+}
+
+ul{
+    list-style-type: none;
 }
