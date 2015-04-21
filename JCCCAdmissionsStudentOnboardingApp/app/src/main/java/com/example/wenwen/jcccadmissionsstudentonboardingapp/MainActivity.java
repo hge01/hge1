@@ -169,7 +169,7 @@ public class MainActivity extends ActionBarActivity
                                  Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_main, container, false);
 
-            WebView myWebView = (WebView)rootView.findViewById(R.id.webview);
+            WebView myWebView = (WebView)rootView.findViewById(R.id.WebView);
             myWebView.setWebChromeClient(new WebChromeClient());
 
             //Enable JavaScript so that the video in the html files will work.
@@ -177,6 +177,13 @@ public class MainActivity extends ActionBarActivity
 
             int i = getArguments().getInt(ARG_SECTION_NUMBER);
             String webUrl = "http://www.jccc.edu/";          //define default WebView
+
+
+            //JCCCParser facts = new JCCCParser("http://www.jccc.edu/about/story/facts/index.html#.VTQRGxcxlE4");
+            //System.out.println(facts.parseToString());
+            //facts.writeToFile("facts.html");
+
+
             //Enable WebView when click each menu.
             switch(i){
                 case 1:
@@ -223,6 +230,7 @@ public class MainActivity extends ActionBarActivity
 
             if(myWebView != null){
                 myWebView.loadUrl(webUrl);
+                //myWebView.loadData(facts.parseToString(), "text/html", null);
             }
             return rootView;
         }
@@ -234,5 +242,7 @@ public class MainActivity extends ActionBarActivity
                     getArguments().getInt(ARG_SECTION_NUMBER));
         }
     }
+
+
 
 }

@@ -6,66 +6,177 @@
 
 
 
-#hero-imagery.jumbotron {
-    padding: 140px 0 0 0;
+#campus-view.jumbotron {
+    padding: 180px 0 0 0;
+    width:90%;
 }
 
-#hero-imagery {
+#campus-view {
     position: relative;
     border: 10px;
     background-color: rgb(26, 26, 26);
     background-repeat: no-repeat;
-    background-position: 80% 50%;
+    background-position: 80% 40%;
     border-bottom: 1px solid silver;
 
 }
 
+.about-summary{
+    width:90%;
+}
+
 .container{
-    padding-right: 15px;
+
     padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+
+
 }
 
 div{
     display: block;
     margin: 0;
     padding: 0;
-    margin-left: 20px;
+    width:90%;
 }
 
 body{
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     width: 100%;
-    margin-left: 20px;
-    margin-right: 20px;
-    line-height: 1.42857143;
+
+    line-height: 1.5;
     color:#333;
     background-color:#ececed;
 }
 
-.table{
-    width: 80%;
-    margin-bottom: 20px;
-    vertical-align:center;
+.campus-visit{
+    width:90%;
 }
 
-.table.table-condensed.table-striped {
+hr{
+    border:0;
+    height:3px;
+    background-color:#55554d;
+}
+
+#sidebar .also{
+    padding:6px 15px;
+    background-color:#bfbfbf;
+    border-radius:4px;
+    width:15%;
+}
+
+.widget page-nav .also ul{
+    list-style-type: circle;
+}
+
+.page-title{
+    color:#003d4c;
+}
+
+h3{
+    display:block;
+    font-family:inherit;
+    font-weight:500px;
+    line-height:1.1em;
+}
+
+.admissions ul{
+    list-style-type:none;
+}
+
+.programs ul{
+    list-style-type:none;
+}
+
+.column-title{
+    font-size:2.03m;
+    color:#333;
+}
+
+.btn-primary, .btn-police{
+    background-color:#0094b3;
+
+    color:#ffffff;
+}
+
+.btn{
+    display:inline-block;
+    padding:6px 12px;
+    margin-bottom:0;
+    font-size:14px;
+    font-weight:400px;
+    line-height:1.5;
+    text-align:center;
+
+    vertical-align:middle;
+
+    border:1px solid transparent;
+    border-radius:4px;
+}
+
+a{
+    text-decoration:none;
+}
+
+.table{
+    width:380px;
+    margin-bottom: 20px;
+    vertical-align:center;
     background-color: #f7f7f3;
 }
 
-.col-md-8{
-    width: 90%;
-    margin-left: 20px;
+
+td{
+    padding:6px;
+}
+
+tr.stripe{
+    background-color:#FFFFFF;
+}
+
+
+
+.facts{
+    width: 100%;
+
     vertical-align:center;
 }
 
-
-
-#content{
-    width: 70%;
+.police{
+    line-height:1.5em;
 }
 
-ul{
-    list-style-type: none;
+.btn.btn-police{
+    padding:0px 6px;
+    margin-bottom:0;
+    font-size:14px;
+    font-weight:400px;
+    line-height:1.5;
+    text-align:center;
+    vertical-align:middle;
+
+}
+
+#admissions{
+    width: 90%;
+}
+
+
+
+#sidebar .widget{
+     padding:8px 20px;
+     background-color:#b5b5b5;
+     border-radius:4px;
+     width:20%;
+}
+
+
+
+footer{
+    margin-top:1em;
+    padding 1em 0;
+    border: 2px #000000;
+    clear:both;
+    text-align:center;
+    font-size:14px;
 }
