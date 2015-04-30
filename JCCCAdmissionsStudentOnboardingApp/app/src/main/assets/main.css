@@ -13,7 +13,6 @@
 
 #campus-view {
     position: relative;
-    border: 10px;
     background-color: rgb(26, 26, 26);
     background-repeat: no-repeat;
     background-position: 80% 50%;
@@ -21,36 +20,35 @@
 
 }
 
-.about-summary{
+.about-summary, .campus-visit, .event,
+.schedule-visit, .admissions-summary,
+.programs, .emergency{
     width:90%;
 }
 
 .container{
-
-    padding-left: 15px;
-
+    margin: 0 auto;
+    padding-left: 10px;
 
 }
 
 div{
     display: block;
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
+    padding-left: 10px;
     width:100%;
 }
 
 body{
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     width: 100%;
-
     line-height: 1.5;
     color:#333;
     background-color:#ececed;
+    text-align:left;
+    margin: 10px auto;
 }
 
-.campus-visit{
-    width:90%;
-}
 
 hr{
     border:0;
@@ -62,7 +60,7 @@ hr{
     padding:6px 15px;
     background-color:#bfbfbf;
     border-radius:4px;
-    width:85%;
+    width:80%;
 }
 
 .widget page-nav .also ul{
@@ -86,11 +84,6 @@ h3{
 
 .programs ul{
     list-style-type:none;
-}
-
-.column-title{
-    font-size:2.03m;
-    color:#333;
 }
 
 .btn-primary, .btn-police{
