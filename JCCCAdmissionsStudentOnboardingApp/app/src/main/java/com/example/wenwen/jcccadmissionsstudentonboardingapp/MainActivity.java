@@ -6,14 +6,18 @@ import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.support.v4.widget.DrawerLayout;
+import android.view.Window;
+import android.webkit.JavascriptInterface;
 import android.webkit.WebChromeClient;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 
 
@@ -30,9 +34,26 @@ public class MainActivity extends ActionBarActivity
      */
     private CharSequence mTitle;
 
+    //private WebView myWebView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        /*
+        getWindow().requestFeature(Window.FEATURE_NO_TITLE);
+        myWebView = new WebView(this);
+        myWebView.loadUrl("file:///android_asset/about.html");
+        myWebView.setWebViewClient(new WebViewClient() {
+            @Override
+            public boolean shouldOverrideUrlLoading(WebView view, String url) {
+                view.loadUrl(url);
+                return true;
+            }
+        });
+
+        this.setContentView(myWebView);*/
+
+        //WebView.setScrollBarStyle(WebView.SCROLLBARS_INSIDE_OVERLAY);
         setContentView(R.layout.activity_main);
 
         mNavDrawer = (NavDrawer)
@@ -110,7 +131,7 @@ public class MainActivity extends ActionBarActivity
             restoreActionBar();
             return true;
 /*
-            //add submenu
+            //add submenu(finally delete)
             super.onCreateOptionsMenu(menu, inflater);
             inflater.inflate(R.menu.main, menu);
             MenuItem menuItem1 = menu.findItem(R.id.action_application).getSubMenu().findItem(R.id.action_application).getSubMenu().add(Menu.NONE, 1, Menu.NONE, "Apply for Admission");
@@ -243,6 +264,13 @@ public class MainActivity extends ActionBarActivity
         }
     }
 
-
-
+    /*
+    @Override
+    public boolean onKeyDown(final int keyCode, final KeyEvent event){
+        if((keyCode == KeyEvent.KEYCODE_BACK) && myWebView.canGoBack()){
+            myWebView.goBack();
+            return true;
+        }
+        return super.onKeyDown(keyCode, event);
+    }*/
 }
