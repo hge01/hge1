@@ -10,6 +10,7 @@ import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.support.v4.widget.DrawerLayout;
@@ -67,6 +68,9 @@ public class MainActivity extends ActionBarActivity
 
 
     }
+
+    //add login activity
+
 
     @Override
     public void onNavigationDrawerItemSelected(int position) {
@@ -153,9 +157,9 @@ public class MainActivity extends ActionBarActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
+//        if (id == R.id.action_settings) {
+//            return true;
+//        }
 
         return super.onOptionsItemSelected(item);
     }
@@ -190,7 +194,7 @@ public class MainActivity extends ActionBarActivity
                                  Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_main, container, false);
 
-            WebView myWebView = (WebView)rootView.findViewById(R.id.WebView);
+            final WebView myWebView = (WebView)rootView.findViewById(R.id.WebView);
             myWebView.setWebChromeClient(new WebChromeClient());
 
             //Enable JavaScript so that the video in the html files will work.
@@ -198,6 +202,8 @@ public class MainActivity extends ActionBarActivity
 
             int i = getArguments().getInt(ARG_SECTION_NUMBER);
             String webUrl = "http://www.jccc.edu/";          //define default WebView
+
+            myWebView.setHorizontalScrollBarEnabled(false);
 
 
             //JCCCParser facts = new JCCCParser("http://www.jccc.edu/about/story/facts/index.html#.VTQRGxcxlE4");
@@ -263,6 +269,8 @@ public class MainActivity extends ActionBarActivity
                     getArguments().getInt(ARG_SECTION_NUMBER));
         }
     }
+
+
 
     /*
     @Override

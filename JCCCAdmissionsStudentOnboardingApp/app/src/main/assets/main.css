@@ -15,7 +15,7 @@
     position: relative;
     background-color: rgb(26, 26, 26);
     background-repeat: no-repeat;
-    background-position: 80% 50%;
+    background-position: 80% 40%;
     border-bottom: 1px solid silver;
 
 }
@@ -23,7 +23,7 @@
 .about-summary, .campus-visit, .event,
 .schedule-visit, .admissions-summary,
 .programs, .emergency{
-    width:90%;
+    width:100%;
 }
 
 .container{
@@ -35,13 +35,14 @@
 div{
     display: block;
     margin: 0 auto;
-    padding-left: 10px;
+    padding-left: 3px;
+    padding-right: 2px;
     width:100%;
 }
 
 body{
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    width: 100%;
+    width: 90%;
     line-height: 1.5;
     color:#333;
     background-color:#ececed;
@@ -49,6 +50,9 @@ body{
     margin: 10px auto;
 }
 
+#vedio{
+    text-align:center;
+}
 
 hr{
     border:0;
@@ -57,7 +61,7 @@ hr{
 }
 
 #sidebar .also{
-    padding:6px 15px;
+    padding:6px 10px;
     background-color:#bfbfbf;
     border-radius:4px;
     width:80%;
@@ -85,6 +89,8 @@ h3{
 .programs ul{
     list-style-type:none;
 }
+
+
 
 .btn-primary, .btn-police{
     background-color:#0094b3;

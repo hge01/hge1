@@ -264,10 +264,10 @@ public class NavDrawer extends Fragment {
             return true;
         }
 
-        if (item.getItemId() == R.id.action_applyForAdmission) {
-            Toast.makeText(getActivity(), "Example action.", Toast.LENGTH_SHORT).show();
-            return true;
-        }
+//        if (item.getItemId() == R.id.action_applyForAdmission) {
+//            Toast.makeText(getActivity(), "Example action.", Toast.LENGTH_SHORT).show();
+//            return true;
+//        }
 
         return super.onOptionsItemSelected(item);
     }
